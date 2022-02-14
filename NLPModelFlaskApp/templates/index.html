@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Simple NLP app</title>
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <div class="pagename">
+        Text summary with Distill-BART
+    </div>
+    <h3>Enter one or a few sentences:</h3>
+    <form action="/", method="POST">
+        <input type="" name="content" id="content">
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<div class="container">
+    <div class="results">
+        <h3 style="color:black;text-align: center;">
+            <b>Summary from Distill-BART:</b>
+        </h3>
+        {{ summary }}
+    </div>
+</div>
+
+{% endblock %}
