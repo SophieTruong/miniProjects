@@ -1,3 +1,7 @@
+"""
+The code is loosely based on this article: https://towardsdatascience.com/deploy-an-nlp-pipeline-flask-heroku-bert-f13a302efd9d
+"""
+
 from wsgiref.util import request_uri
 from flask import Flask, request, render_template, redirect
 from transformers import BartTokenizer, BartForConditionalGeneration
